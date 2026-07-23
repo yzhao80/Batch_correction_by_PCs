@@ -246,9 +246,9 @@ excluded_rna_pcs <- pc_selection$excluded_pcs
 
 ## Step 4: Run differential expression analysis with selected RNA PCs
 
-The final model should use the original count matrix or original normalized expression matrix as input. The residualized expression matrix is used only to estimate RNA PCs.
+The final model should use the original count matrix as input. The residualized expression matrix is used only to estimate RNA PCs.
 
-### Binary DEG example
+### Binary variable example
 
 ```r
 deg_results <- run_limma_voom_with_rna_pcs(
@@ -326,8 +326,7 @@ continuous_results$result_summary
 - Use the original count matrix or original normalized expression matrix for the final model.
 - Exclude RNA PCs correlated with the signal of interest before adding RNA PCs to the final model.
 - For binary variables, use point-biserial correlation, Kruskal-Wallis test, and covariate-adjusted logistic regression.
-- For continuous variables, use Pearson correlation, Spearman correlation, and covariate-adjusted linear regression.
-- Do not upload raw sequencing data, protected health information, or large intermediate objects to GitHub.
+- For continuous variables, use Pearson correlation, Spearman correlation, and (optional) covariate-adjusted linear regression.
 
 ## License
 
