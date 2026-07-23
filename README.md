@@ -28,7 +28,7 @@ Batch_correction_by_PCA/
 
 Use `R/batch_correction_by_pca_binary.R` when the main variable of interest is binary, such as:
 
-- ALS case/control status
+- Disease case/control status
 - exposure yes/no status
 - treatment/control group
 
@@ -140,7 +140,7 @@ This is the key step. RNA-derived PCs can capture the main biological signal of 
 
 ## PC selection for a binary main variable
 
-For a binary main variable, such as ALS case/control status or exposure yes/no status, use:
+For a binary main variable, such as disease case/control status or exposure yes/no status, use:
 
 ```r
 source("R/batch_correction_by_pca_binary.R")
