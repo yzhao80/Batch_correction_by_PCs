@@ -1,4 +1,4 @@
-# Batch Correction by PCA
+# Batch Correction by PCs
 
 This repository provides R workflows for capturing and adjusting hidden covariates in RNA-seq differential gene expression analysis using principal components (PCs) derived from residualized expression data.
 
